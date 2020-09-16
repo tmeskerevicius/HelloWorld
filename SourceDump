@@ -34,3 +34,13 @@ def emoji_picker(message):
 info = input ("-->")
 
 print(emoji_picker(info))
+
+try:
+    age = int(input("Age "))
+    income = 22000
+    print(age)
+    risk = income / age
+except ValueError:
+    print(" Invalid value")
+except ZeroDivisionError:
+    print("Age cannot be zero")
