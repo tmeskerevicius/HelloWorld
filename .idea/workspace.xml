@@ -25,12 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7e2e60a-5f01-4c82-8906-9304005996fa" name="Default Changelist" comment="classes">
-      <change afterPath="$PROJECT_DIR$/converters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/utils.py" afterDir="false" />
+    <list default="true" id="b7e2e60a-5f01-4c82-8906-9304005996fa" name="Default Changelist" comment="modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SourceDump" beforeDir="false" afterPath="$PROJECT_DIR$/SourceDump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,16 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\HelloWorld" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\HelloWorld\venv" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -246,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600267383925</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="modules">
+      <created>1600529514405</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600529514405</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +294,8 @@
     <MESSAGE value="string operations2" />
     <MESSAGE value="Going further" />
     <MESSAGE value="classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="classes" />
+    <MESSAGE value="modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="modules" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2353" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600009396585">
@@ -296,38 +310,38 @@
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2012" y="92" width="1182" height="544" key="DiffContextDialog/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600183410463" />
-    <state x="2383" y="119" key="FileChooserDialogImpl" timestamp="1599837064638">
+    <state x="2383" y="119" key="FileChooserDialogImpl" timestamp="1600530071346">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
-    <state x="2383" y="119" key="FileChooserDialogImpl/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1599837064638" />
+    <state x="2383" y="119" key="FileChooserDialogImpl/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600530071346" />
     <state x="2478" y="266" key="Github.ShareDialog" timestamp="1599827210234">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2478" y="266" key="Github.ShareDialog/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1599827210234" />
-    <state width="1345" height="180" key="GridCell.Tab.0.bottom" timestamp="1600529468466">
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom" timestamp="1600530081738">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599493352976" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599339667517" />
-    <state width="1345" height="180" key="GridCell.Tab.0.bottom/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529468466" />
-    <state width="1345" height="180" key="GridCell.Tab.0.center" timestamp="1600529468466">
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600530081738" />
+    <state width="1345" height="180" key="GridCell.Tab.0.center" timestamp="1600530081738">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599493352976" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599339667517" />
-    <state width="1345" height="180" key="GridCell.Tab.0.center/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529468466" />
-    <state width="1345" height="180" key="GridCell.Tab.0.left" timestamp="1600529468466">
+    <state width="1345" height="180" key="GridCell.Tab.0.center/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600530081738" />
+    <state width="1345" height="180" key="GridCell.Tab.0.left" timestamp="1600530081738">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599493352976" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599339667517" />
-    <state width="1345" height="180" key="GridCell.Tab.0.left/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529468466" />
-    <state width="1345" height="180" key="GridCell.Tab.0.right" timestamp="1600529468466">
+    <state width="1345" height="180" key="GridCell.Tab.0.left/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600530081738" />
+    <state width="1345" height="180" key="GridCell.Tab.0.right" timestamp="1600530081738">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599493352976" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599339667517" />
-    <state width="1345" height="180" key="GridCell.Tab.0.right/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529468466" />
+    <state width="1345" height="180" key="GridCell.Tab.0.right/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600530081738" />
     <state x="2241" y="125" key="MultipleFileMergeDialog" timestamp="1599837774156">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
@@ -341,14 +355,18 @@
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2450" y="277" key="VCS.ChangelistChooser/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600183348979" />
-    <state x="2195" y="97" key="Vcs.Push.Dialog.v2" timestamp="1600011481503">
+    <state x="2195" y="97" key="Vcs.Push.Dialog.v2" timestamp="1600529579335">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
-    <state x="2195" y="97" key="Vcs.Push.Dialog.v2/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600011481503" />
+    <state x="2195" y="97" key="Vcs.Push.Dialog.v2/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529579335" />
     <state x="2316" y="98" key="VcsDiffUtil.ChangesDialog" timestamp="1600181873084">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2316" y="98" key="VcsDiffUtil.ChangesDialog/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600181873084" />
+    <state x="2420" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600529532085">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2420" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1366.728/0.0.1920.1040@1920.0.1366.728" timestamp="1600529532085" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599336360906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
