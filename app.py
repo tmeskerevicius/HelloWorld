@@ -1,39 +1,11 @@
-class Mammal:
-    def __init__(self, name):
-        self.name = name  # can be any type no type checking
+import converters
+from converters import emoji_picker
+from utils import find_max
 
-    def run(self):
-        print(f"{self.name} runs")
+print(converters.kg_to_lbs(119))
 
-    def eat(self):
-        print(f"{self.name} eats")
+print(emoji_picker("Aha nice :) good function"))
 
-    def jump(self):
-        print(f"{self.name} jumps")
+numbers = [2,4,10,13,8,20,17]
 
-
-class Dog(Mammal):
-    def bark(self):
-        print(f"{self.name} barks")
-
-
-class Cat(Mammal):
-    def meow(self):
-        print(f"{self.name} meows")
-
-
-dogJoe = Dog("Joe")
-catRee = Cat("Ree")
-dogJoe.food = "pedegree"
-catRee.food = "whiskas"
-dogJoe.age = 2
-catRee.age = 3
-dogJoe.bark()
-catRee.meow()
-
-catRee.run()
-dogJoe.jump()
-print(catRee.food)
-print(catRee.age)
-print(dogJoe.food)
-print(dogJoe.age)
+print(find_max(numbers))
