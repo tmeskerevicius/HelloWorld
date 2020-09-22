@@ -102,3 +102,159 @@ ecommerce.shipping.calc_shipping()
 calc_shipping()
 
 shipping.calc_shipping()
+import random
+
+number_table = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+newline = []
+clone_table = number_table
+for element in range(len(number_table)):
+    picked_element = random.choice(clone_table)
+    newline.append(picked_element)
+    clone_table.remove(picked_element)
+
+
+print(newline)
+for i in range(6):
+    # print(random.randint(1, 6))
+    pass
+
+members = ["Lu", "Mosh", "Lee", "Andy", "Ken"]
+
+for i in range(10):
+    # print(random.choice(members))
+    pass
+
+
+class Dice:
+    def __init__(self, sides, tries):
+        self.sides = sides
+        self.tries = tries
+
+    def roll(self):
+        streak = []
+        for ii in range(self.tries):
+            streak.append(random.randint(1, self.sides))
+
+        tup = tuple(streak)
+        return tup
+
+
+kauliukas = Dice(16, 4)
+
+print(kauliukas.roll())
+from pathlib import Path
+
+
+# absolute path
+# relative path
+
+path = Path("ecommerce")
+print(path.exists())  # check if ecommerce directory exist (Path("ecommerce"))
+
+path2 = Path("emails")
+
+if path2.exists():   # check if emails directory exist (Path("emails")) (it does not)
+    print('emails directory exists (Path("emails"))')
+    print(path2.exists())
+else:
+    path2.mkdir()   # creates "emails" directory
+    print('creating "emails" directory... ..... .....')
+    print(path2.exists())   # check if emails directory exist (Path("emails")) (now it does)
+
+
+path2.rmdir()    # remove directory
+
+path3 = Path()   # path set to current directory
+print(path3.glob('*'))
+# creates searchable generator object Path.glob
+# glob has to have argument: path3.glob() is invalid
+# search in Path() (current directory)
+# glob('*') everything directories and files
+# glob('*.*') only files and not directories
+# glob('*.py') only .py files
+# glob('*.xls') exel type files only
+
+for fileObj in path3.glob('*.py'):
+    print(fileObj)
+import openpyxl as xl
+from pathlib import Path
+from openpyxl.chart import BarChart, Reference
+
+file = Path("transactions.xlsx")
+print(file.exists())
+
+wb = xl.load_workbook('transactions.xlsx')
+sheet = wb['Sheet1']
+cell0 = sheet['a1']
+cell2 = sheet.cell(1, 1)
+print("sheet.max_row is: ", sheet.max_row)
+print("sheet.max_column is: ", sheet.max_column)
+
+noOfColumns = sheet.max_column
+noOfLines = sheet.max_row
+line = ""
+maxSpace = 0
+for l1 in range(noOfLines):
+
+    for c1 in range(noOfColumns):  # reange(x) -> 0, 1, 2, 3,.....x-1  (x is not included)
+        cell3 = sheet.cell(l1+1, c1+1)
+        if maxSpace < len(str(cell3.value)):  # simplified just because I know transaction_id is the longest
+            maxSpace = len(str(cell3.value))
+            line += str(cell3.value) + " "
+        else:
+            missingBit = maxSpace - len(str(cell3.value))
+            line += str(cell3.value) + " " * missingBit + " "
+    print(line)
+    line = ""
+
+for row in range(2, sheet.max_row+1):
+    cell = sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9
+    corrected_price_cell = sheet.cell(row, 4)
+    corrected_price_cell.value = corrected_price
+
+values = Reference(sheet,
+          min_row=2,
+          max_row=sheet.max_row,
+          min_col=4,
+          max_col=4)
+
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, "e2")
+
+wb.save("new_transactions.xlsx")
+import openpyxl as xl
+from pathlib import Path
+from openpyxl.chart import BarChart, Reference
+
+
+def process_workbook(filename, newfilename, chartslocation):
+    file = Path(filename)
+    if not file.exists():
+        print("You source file could not be found")
+
+    wb = xl.load_workbook(file)
+    sheet = wb['Sheet1']
+
+    for row in range(2, sheet.max_row + 1):
+        cell = sheet.cell(row, 3)
+        corrected_price = cell.value * 0.9
+        corrected_price_cell = sheet.cell(row, 4)
+        corrected_price_cell.value = corrected_price
+
+    values = Reference(
+                       sheet,
+                       min_row=2,
+                       max_row=sheet.max_row,
+                       min_col=4,
+                       max_col=4
+                        )
+
+    chart = BarChart()
+    chart.add_data(values)
+    sheet.add_chart(chart, chartslocation)
+    wb.save(newfilename)
+
+process_workbook("transactions.xlsx", "transactions3.xlsx","f3")
